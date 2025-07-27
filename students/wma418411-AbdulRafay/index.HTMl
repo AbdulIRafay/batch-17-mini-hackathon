@@ -45,12 +45,14 @@ height: 60px;
     width: 500px;
 }
 .A3{
+    align-items: center;
     background-color: rgb(218, 243, 167);
     width: 1500px;
     height: 120px;
     font-size: 20px;
 }
 .A3 ul{
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +73,110 @@ height: 60px;
 .A5 img{
     width: 1500px;
 }
+.A55{
+ display: flex;
+ gap: 10px;
+}
+.A6{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 250px;
+    border-radius: 5px;
+    position: relative;
+}
+.A6 img{
+    width: 500px;
+    height: 250px;
+}
+.A6 p{
+    position: absolute;
+    top: 10px;
+    left: 40%;
+}
+.A7{
+    background-color: antiquewhite;
+    width: 500px;
+    height: 250px;
+    border-radius: 5px;
+    position: relative;
+
+}
+.A7 img{
+    width: 500px;
+    height: 250px;
+}
+.A7 p{
+    position: absolute;
+    top: 10px;
+    left: 40%;
+}
+.A9{
+    text-align: center;
+}
+.A10{
+    background-color: rgb(243, 224, 199);
+    width: 1500px;
+    height: 400px;
+    text-align: center;
+}
+.A11{
+    text-align: center;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Grid Layout */
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Video Card Styling */
+.video-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Thumbnail Container */
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Date Badge */
+.date-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;}
+
+
 </style>
 </head>
 <body>
@@ -119,12 +225,82 @@ height: 60px;
 </ul></div> 
     <br> <br> 
     <div class="A4">
-    <img src="./picture 2.png" alt="">
+    <img src="./pic 14.png" alt="">
     </div>
     <br>  <br> <br>
     <div class="A5">
-    <h2>What We Are Doing </h2>
+    <h1>What We Are Doing </h1>
+    <br> <br>
     <img src="./picture 3.png" alt="">
     </div>
+    <div class="A55">
+    <div class="A6">
+        <img src="./pict 6.jpg" alt=""><p> Medical Treatment</p>
+     </div>
+     <div class="A7">
+        <img src="./piv 7.jpg" alt=""> <p>Kifalat Families</p>
+     </div> </div>
+     <br> <br>
+     <div class="A8">
+        <img src="./pic 8.png" alt="">
+     </div>
+     <div>
+        <img src="./pic ...15.png" alt="">
+     </div>
+     <div class="A9">
+      <span style="color: rgb(141, 233, 4);">  <p>Our Testimonials</p> </span>
+        <h1>What They Say?</h1>
+     </div>
+     <div class="A10">
+        <br> <br> <br> <br>
+        <br> <br> <br> <br>
+        <br> <br> <br> <br>
+  <h2><span style="color: rgba(6, 104, 184, 0.719);"> Asir Ismail </span> </h2>
+<p>(C.O.O. & Director, Premier Cables Pvt. Ltd)
+ <br> <br>
+
+When we talk about serving humanity, no second thought occurs other than Saylani Welfare Trust. Saylani is doing a tremendous job in terms of everything they do for a troubled humanity. From offering food to the hungry to arranging jobs for jobless people, arranging marriages and dowry for orphaned girls, offering free medical facilities, and much more. We sincerely wish them success in their future endeavors and in raising their standards of serving mankind in a better and more professional way.</p>
+     </div>
+     <br> <br>
+     <div class="A11">  <h1>Media Update</h1></div>
+      <br> <br>
+      
+  <div class="video-gallery">
+    <!-- Card 1 -->
+    <div class="video-card">
+      <div class="video-thumbnail">
+        <img src="thumbnail1.jpg" alt="Saylani's Journey">
+      </div>
+      <div class="video-info">
+        <h3>Saylani's Journey of Sacrifice, Smiles & Service | Eid-ul-Adha 2025</h3>
+        <p>#Organisation</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="video-card">
+      <div class="video-thumbnail">
+        <img src="thumbnail2.jpg" alt="Spreading Smiles">
+      </div>
+      <div class="video-info">
+        <h3>Spreading Smiles Till the Last Moment | Saylani Eid 2025</h3>
+        <p>#Organisation</p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="video-card">
+      <div class="video-thumbnail">
+        <img src="thumbnail3.jpg" alt="Meat Distribution">
+      </div>
+      <div class="video-info">
+        <h3>Meat Distribution at Chashma Goth — Saylani Spreading Eid Happiness</h3>
+        <p>#Organisation</p>
+      </div>
+    </div>
+
+    <!-- Add more cards as needed using the same structure -->
+    
+  </div>
 </body>
 </html>
